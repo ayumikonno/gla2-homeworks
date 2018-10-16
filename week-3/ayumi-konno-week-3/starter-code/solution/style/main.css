@@ -5,10 +5,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Merriweather', serif;
-}
-
 /* Flexbox Hack*/
 
 .box {
@@ -25,26 +21,33 @@ body {
   display: flex;
   flex: 1 1 100%;
   flex-flow: row nowrap;
-  padding: 10px 40px;
+  /*padding: 10px 40px;*/
   height: 20px;
+}
+
+body {
+  font-family: 'Merriweather', serif;
 }
 
 /* HEADER */
 
 header {
   background: black;
-  padding: 20px 80px;
+  padding: 20px 20px;
   border-bottom: yellow solid 5px;
 }
 
 h1 {
   color: yellow;
+  padding: 0 20px;
 }
 
-.menu {
+nav .menu {
   display: flex;
   flex-flow: row nowrap;
   font-family: sans-serif;
+  text-align: right;
+  padding: 0 20px;
   justify-content: flex-end;
 }
 
@@ -55,6 +58,7 @@ header .column {
 .extrabold {
   font-family: 'Teko', sans-serif;
   font-size: 25px;
+  text-transform: capitalize;
 }
 
 ul li {
@@ -73,6 +77,14 @@ blockquote {
   justify-content: center;
 }
 
+.strike {
+  text-decoration: line-through;
+}
+
+.underline {
+  border-bottom: yellow solid;
+}
+
 .tagline {
   background-color: rgb(217, 217, 217);
   height: 100%;
@@ -83,17 +95,21 @@ blockquote {
     background-size: cover;
     background-position: center;
     height: 700px;
-    flex-direction: row-reverse;
+    /*flex-direction: row-reverse;*/
+    justify-content: flex-end;
 }
 
 .match {
-  font-family: 'Merriweather', serif;
   border: 1px solid black;
-  background-color: rgb(217, 217, 217, 0.5);
-  width: 300px;
-  padding: 10px;
+  background-color: rgb(190, 190, 190, 0.5);
+  max-width: 30%;
+  padding: 20px;
   height: 50%;
   text-align: center;
+  margin: 20px;
+  line-height: 1.8;
+  font-style: sans-serif;
+  font-weight: bold;
 }
 
 .button {
